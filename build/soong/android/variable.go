@@ -9,6 +9,9 @@ type Product_variables struct {
 	Egl_workaround_bug_10194508 struct {
 		Cppflags []string
 	}
+	Has_legacy_camera_hal1 struct {
+		Cflags []string
+	}
 	Needs_text_relocations struct {
 		Cppflags []string
 	}
@@ -24,6 +27,7 @@ type ProductVariables struct {
 	Allows_invalid_pthread    *bool `json:",omitempty"`
 	Egl_needs_handle    *bool `json:",omitempty"`
 	Egl_workaround_bug_10194508    *bool `json:",omitempty"`
+	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Uses_generic_camera_parameter_library  *bool `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
