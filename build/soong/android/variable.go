@@ -1,5 +1,8 @@
 package android
 type Product_variables struct {
+	Egl_needs_handle struct {
+		Cppflags []string
+	}
 	Egl_workaround_bug_10194508 struct {
 		Cppflags []string
 	}
@@ -15,6 +18,7 @@ type Product_variables struct {
 }
 
 type ProductVariables struct {
+	Egl_needs_handle    *bool `json:",omitempty"`
 	Egl_workaround_bug_10194508    *bool `json:",omitempty"`
 	Uses_generic_camera_parameter_library  *bool `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
