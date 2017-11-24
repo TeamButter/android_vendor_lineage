@@ -1,5 +1,8 @@
 package android
 type Product_variables struct {
+	Allows_invalid_pthread struct {
+		Cppflags []string
+	}
 	Egl_needs_handle struct {
 		Cppflags []string
 	}
@@ -18,6 +21,7 @@ type Product_variables struct {
 }
 
 type ProductVariables struct {
+	Allows_invalid_pthread    *bool `json:",omitempty"`
 	Egl_needs_handle    *bool `json:",omitempty"`
 	Egl_workaround_bug_10194508    *bool `json:",omitempty"`
 	Uses_generic_camera_parameter_library  *bool `json:",omitempty"`
