@@ -15,9 +15,6 @@ type Product_variables struct {
 	Needs_text_relocations struct {
 		Cppflags []string
 	}
-	Uses_generic_camera_parameter_library struct {
-		Srcs []string
-	}
 	Uses_media_extensions struct {
 		Cflags []string
 	}
